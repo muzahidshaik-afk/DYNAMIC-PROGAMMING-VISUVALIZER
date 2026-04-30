@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DP Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>DP Visualizer</h1>
+
+<div class="controls">
+    <select id="algo">
+        <option value="fib">Fibonacci</option>
+        <option value="knapsack">Knapsack</option>
+        <option value="lcs">LCS</option>
+    </select>
+
+    <input id="input1" placeholder="Input 1 (n / weights / string)">
+    <input id="input2" placeholder="Input 2 (values / string)">
+    <input id="input3" placeholder="Capacity (for knapsack)">
+
+    <button onclick="start()">Visualize</button>
+</div>
+
+<div id="grid" class="grid"></div>
+
+<script src="sleep.js"></script>
+<script src="fibonacci.js"></script>
+<script src="knapsack.js"></script>
+<script src="lcs.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
